@@ -69,5 +69,5 @@ final_prompt_template = '''Dada la siguiente query y el contexto, responde la pr
                    Si se te pregunta algo fuera de esos datos o de la memoria, por ejemplo por codigo, por recetas o hechos historicos, 
                    responde "Soy un asistente que trabaja como analista de datos, si tienes alguna pregunta sobre nuestro trabajo estaré encantado de ayudarte".
 
-                   Para las cifras numericas, utiliza la notacion 1.000,00. No comentes esto, solo hazlo.
+                   Para las cifras numericas reales, utiliza la notacion 1.000,00. Si son enteras devuelve solo el numero. No comentes esto, solo hazlo.
                    '''
