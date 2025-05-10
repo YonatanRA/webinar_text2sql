@@ -60,14 +60,8 @@ final_prompt_template = '''Dada la siguiente query y el contexto, responde la pr
                    Si la query es SELECT "Actua como un asistente, usa la memoria" 
                    o el contexto es  "Actua como un asistente, usa la memoria", actua como un asistente normal
                    usando la memoria de la conversación. Por ejemplo, si el usuario pide repetir la respuesta, usa la memoria
-                   para hacerlo. No expliques esta query, simplemente actua como asistente. En este caso, el formato es solamente el siguiente:
-                     ```json
-                     [
-                        {{
-                            "type": "text",
-                            "content": Respuesta del asistente
-                        }},
-                    ```
+                   para hacerlo. No expliques esta query, simplemente actua como asistente.
+  
 
                    Si el contexto esta vacío, expresalo directamente, no inventes datos.
                    
