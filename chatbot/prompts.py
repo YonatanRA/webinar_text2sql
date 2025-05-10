@@ -15,7 +15,7 @@ Asegúrate de saber en qué tabla se encuentra cada columna.
 9. Es posible que la pregunta se refiera a una query anterior. Primero determina si es cierto, porque no siempre es así. De serlo, reformula la ultima query para responder:
 ultima query = {last_query}
 
-9. Los nombres de las tablas son las siguientes:
+10. Los nombres de las tablas son las siguientes:
 {table_names}  
 Usa la siguiente informacion de cada una:
 {table_info}  
