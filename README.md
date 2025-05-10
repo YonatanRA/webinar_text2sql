@@ -107,7 +107,7 @@ Usaremos la base de datos [sakila](https://dev.mysql.com/doc/sakila/en/sakila-in
 
 Este proyecto necesita de una base de datos SQL (MySQL, PostGres, SQLServer). La URI debe estar escrita en el archivo `.env`. En la platilla de archivo `.env.template` existe un ejemplo de URI para MySQL. Se recomienda usar un usuario con permisos restringidos por seguridad. Se necesita obtener una API KEY de OpenAI [aqui](https://platform.openai.com/api-keys).
 
-`URI = 'mysql+pymysql://user:password@localhost:3306/Conurma'`
+`URI = 'mysql+pymysql://user:password@localhost:3306/sakila'`
 
 `OPENAI_API_KEY = 'sk-WrrN..................'`
 
