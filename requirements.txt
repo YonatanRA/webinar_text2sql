@@ -1,0 +1,10 @@
+SQLAlchemy==2.0.29;
+pymysql==1.0.2;
+psycopg2-binary==2.9.10;
+pyodbc==5.2.0;
+python-dotenv==1.0.1;
+pydantic==2.10.6;
+langchain==0.3.15;
+langchain-openai==0.3.8;
+langchain-core==0.3.45;
+langchain-community==0.3.10;
