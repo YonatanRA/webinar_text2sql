@@ -49,6 +49,7 @@ Usaremos la base de datos [sakila](https://dev.mysql.com/doc/sakila/en/sakila-in
 
 + Relaciones: Incluye múltiples relaciones entre tablas, ideal para practicar joins, subqueries, views y stored procedures.
 
++ Diagrama entidad-relación:
 ![erd](https://raw.githubusercontent.com/YonatanRA/webinar_text2sql/refs/heads/main/images/erd.png)
 
 
