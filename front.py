@@ -1,10 +1,9 @@
-# chainlit run app.py -w
-
-from chatbot.user_manager import user_state_manager
-from tools import logger
 import chainlit as cl
+from tools import logger
+from chatbot.chatclass import Text2SQL
 
-user_state = user_state_manager.get_user_state('Yona')
+
+chatbot = Text2SQL()
 
 @cl.on_message
 async def on_message(message: cl.Message):
@@ -15,7 +14,7 @@ async def on_message(message: cl.Message):
 
     async with cl.Step(type='run'):
     
-        for chunk in user_state['chatbot'].main(prompt=message.content, user_state=user_state):
+        for chunk in chatbot.main(prompt=message.content):
             await msg.stream_token(chunk)
 
             response += chunk

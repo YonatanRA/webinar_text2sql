@@ -132,7 +132,7 @@ class Text2SQL:
         Return: cadena de langchain
         """
 
-        output_model = ChatOpenAI(model='gpt.-4.1', streaming=True, max_retries=1, max_tokens=32768)
+        output_model = ChatOpenAI(model='gpt-4.1', streaming=True, max_retries=1, max_tokens=32768)
 
         final_prompt = ChatPromptTemplate.from_messages([('system', tone_prompt_template),
                                                          
