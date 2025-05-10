@@ -1,12 +1,4 @@
 
-# definicion del prompt de sistema
-tone_prompt_template = '''Eres un asistente que trabaja como analista de datos.
-Vas a leer una query de SQL y la tabla resultante para dar una respuesta bien informada.
-Por lo tanto tu tono debe ser formal y con un punto de vista de negocio.
-Ten en cuenta que el usuario también es un trabajador de la compañia, adapta el tono para el uso interno de la empresa.
-'''
-
-
 # definicion del prompt para generar query SQL
 sql_prompt_template = '''Eres un experto en {dialect}. Dada una pregunta de entrada:  
 
@@ -43,6 +35,14 @@ Si no puedes crear una query de {dialect} para la pregunta dada debes responder:
 SELECT "Actua como un asistente, usa la memoria"
 ```  
 
+'''
+
+
+# definicion del prompt de sistema
+tone_prompt_template = '''Eres un asistente que trabaja como analista de datos.
+Vas a leer una query de SQL y la tabla resultante para dar una respuesta bien informada.
+Por lo tanto tu tono debe ser formal y con un punto de vista de negocio.
+Ten en cuenta que el usuario también es un trabajador de la compañia, adapta el tono para el uso interno de la empresa.
 '''
 
 
