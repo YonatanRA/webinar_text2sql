@@ -85,7 +85,7 @@ class Text2SQL:
         Return: None, actualiza el atributo contexto
         """
 
-        logger.info('Ejecutando query...')
+        logger.info('Creacion y ejecución de la query...')
 
         done = False
         counter = 0
