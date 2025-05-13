@@ -15,7 +15,7 @@ from langchain.schema import StrOutputParser
 from langchain.schema.runnable import RunnableLambda, RunnablePassthrough
 from langchain.memory import ConversationBufferWindowMemory
 
-from .prompts import sql_prompt_template, tone_prompt_template, final_prompt_template
+from .prompts import sql_prompt_template, system_prompt_template, question_prompt_template
 from tools import logger
 
 
@@ -134,11 +134,11 @@ class Text2SQL:
 
         output_model = ChatOpenAI(model='gpt-4.1', streaming=True, max_retries=1, max_tokens=32768)
 
-        final_prompt = ChatPromptTemplate.from_messages([('system', tone_prompt_template),
+        final_prompt = ChatPromptTemplate.from_messages([('system', system_prompt_template),
                                                          
                                                          MessagesPlaceholder(variable_name='history'),
                                                          
-                                                         ('human', final_prompt_template)])
+                                                         ('human', question_prompt_template)])
 
 
         chain = (RunnablePassthrough.assign(history=RunnableLambda(self.memory.load_memory_variables) 
