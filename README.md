@@ -119,7 +119,7 @@ Este proyecto necesita de una base de datos SQL (MySQL, PostGres, SQLServer). La
 1. Crear la base de datos de MySQL sakila. Puede hacerse desde [Workbench](https://www.mysql.com/products/workbench/):
    ![workbench](https://raw.githubusercontent.com/YonatanRA/webinar_text2sql/refs/heads/main/images/import_db.png)
 
-   O también desde la terminal de sql con los siguintes comandos:
+   O también desde la terminal de sql con los siguientes comandos:
    ```bash
     mysql -u root -p 
     ```
