@@ -125,7 +125,7 @@ Este proyecto necesita de una base de datos SQL (MySQL, PostGres, SQLServer). La
     ```
 
     ```bash
-    mysql -u root -p sakila < sakila.sql
+    mysql -u root -p sakila < sakila_sql/sakila.sql
     ```
 
 2. Obtener URI de la base de datos de SQL y colocarla en el archivo `.env` (ejemplo en el archivo `.env.template`).
